@@ -118,3 +118,16 @@ IRIS was developed as a collaborative project. This repository is intended to do
 ---
 
 ⭐ **Original project:** https://github.com/itsaddyon/IRIS
+## 📸 Project Screenshots
+
+### Operations Portal
+![Operations Portal](https://raw.githubusercontent.com/itsaddyon/IRIS/main/docs/images/portal.png)
+
+### Live Session Detection
+![Live Session Detection](https://raw.githubusercontent.com/itsaddyon/IRIS/main/docs/images/session.png)
+
+### Detection Details
+![Detection Details](https://raw.githubusercontent.com/itsaddyon/IRIS/main/docs/images/detection-detail.png)
+
+### Road Vision
+![Road Vision](https://raw.githubusercontent.com/itsaddyon/IRIS/main/docs/images/roadvision.png)

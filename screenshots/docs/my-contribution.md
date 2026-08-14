@@ -1,25 +1,40 @@
 # 👨‍💻 My Contribution to IRIS
 
-## Team Member
+## Frontend & Dashboard Development
 
-I am a team member contributing to the development and improvement of **IRIS — Intelligent Road Inspection System**.
+I contributed to **IRIS — Intelligent Road Inspection System** as a team member, focusing primarily on the **frontend and dashboard development**.
 
-### Areas of Contribution
+### 🎨 Frontend
 
-* 🔧 Project development and implementation support
-* 🧪 Testing and debugging
-* 📚 Technical documentation
-* 🖥️ UI and presentation improvements
-* 🔗 Feature integration
-* 🚀 Repository and project documentation improvements
+My contributions include:
 
-## Project
+* Designed and improved the user interface
+* Worked on the overall frontend layout and structure
+* Improved the visual presentation of the application
+* Worked on responsive and user-friendly interface components
+* Integrated frontend components with the project's functionality
 
-**IRIS — Intelligent Road Inspection System**
+### 📊 Dashboard
 
-IRIS is an AI-powered road inspection platform that uses computer vision and YOLOv8 to detect and analyze road damage.
+I contributed to the dashboard experience by working on:
 
-## Team
+* Dashboard layout and organization
+* Presentation of road inspection information
+* Detection-related information display
+* Data visualization and user interface elements
+* Improving the overall usability of the dashboard
+
+### 🛠️ Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* Chart.js
+* Flask frontend integration
+
+### 👥 Team
+
+**Project:** IRIS — Intelligent Road Inspection System
 
 **Project Lead:** Adarsh Arya
 
@@ -27,4 +42,4 @@ IRIS is an AI-powered road inspection platform that uses computer vision and YOL
 
 ---
 
-> This document records my contribution as a team member to the IRIS project.
+> My primary contribution to the IRIS project was focused on frontend development and dashboard design.

@@ -1,41 +1,37 @@
 # 🚧 IRIS — Intelligent Road Inspection System
 
-> **AI-powered road inspection and pothole detection system for smarter, faster, and data-driven road maintenance.**
+<p align="center">
+  <b>AI-Powered Road Inspection & Pothole Detection System</b>
+</p>
 
-[![AI](https://img.shields.io/badge/AI-YOLOv8-blue)]()
-[![Python](https://img.shields.io/badge/Python-3.11+-yellow)]()
-[![Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV-green)]()
-[![Backend](https://img.shields.io/badge/Backend-Flask-red)]()
-[![Database](https://img.shields.io/badge/Database-SQLite-lightgrey)]()
+<p align="center">
+  Detect • Classify • Locate • Review • Improve
+</p>
 
 ---
 
 ## 📌 About IRIS
 
-**IRIS (Intelligent Road Inspection System)** is an AI-powered road monitoring and inspection platform designed to automate pothole detection and improve road-maintenance workflows.
+**IRIS (Intelligent Road Inspection System)** is an AI-powered road inspection platform designed to detect potholes and road damage using **computer vision and YOLOv8**.
 
-The system uses a live camera, video input, and **YOLOv8-based computer vision** to detect potholes in real time. Detected incidents can be classified by severity, stored with supporting information, and reviewed through a municipal dashboard.
+The system processes live camera, video, or IP-camera input, detects potholes in real time, classifies their severity, records inspection data, and provides dashboards for field operators and municipal authorities.
 
-IRIS is designed to connect **field-level road inspection with municipal decision-making**.
+IRIS aims to make road inspection **faster, smarter, and more data-driven**.
 
 ---
 
-## 🎯 Problem Statement
+## 🎯 Problem
 
-Traditional road inspection often depends heavily on manual surveys.
+Traditional road inspection depends heavily on manual surveys, making large-scale monitoring time-consuming and difficult to manage.
 
-This can lead to:
+IRIS addresses this by using AI to:
 
-* ⏳ Slow inspection processes
-* 👷 High dependence on manual effort
-* 📍 Difficulty tracking exact locations
-* 📊 Poorly structured inspection data
-* 🚧 Delayed identification of serious road damage
-* 💰 Increased maintenance costs
-
-### Our Goal
-
-Use **Artificial Intelligence + Computer Vision + Location Data + Analytics** to make road inspection faster and more systematic.
+* Detect road damage automatically
+* Identify pothole severity
+* Record inspection sessions
+* Capture supporting evidence
+* Associate detections with location data
+* Provide a centralized review dashboard
 
 ---
 
@@ -44,118 +40,108 @@ Use **Artificial Intelligence + Computer Vision + Location Data + Analytics** to
 ```text
 Camera / Video / IP Camera
             ↓
-      YOLOv8 Detection
+       YOLOv8 Model
             ↓
-     Pothole Detection
+    Pothole Detection
             ↓
-   Duplicate Detection Check
+ Duplicate Detection Check
             ↓
    Severity Classification
             ↓
- ┌──────────┴──────────┐
- ↓                     ↓
-Dashboard         High Severity
-                       ↓
+   ┌────────┴────────┐
+   ↓                 ↓
+Dashboard       High Severity
+                     ↓
               Snapshot + GPS
-                       ↓
-              Data Persistence
-                       ↓
-             Municipal Dashboard
-                       ↓
-          Review / Approve / Decline
-                       ↓
-                 Reports
+                     ↓
+             Data Persistence
+                     ↓
+            Municipal Dashboard
+                     ↓
+             Review / Approval
+                     ↓
+              PDF Reporting
 ```
 
 ---
 
 ## ✨ Key Features
 
-### 🤖 AI-Powered Detection
+### 🤖 AI-Based Detection
 
 * Real-time pothole detection
-* YOLOv8-based object detection
-* Computer vision processing using OpenCV
+* YOLOv8 object detection
+* OpenCV-based image processing
 * Detection confidence tracking
-* Duplicate detection handling
+* Duplicate detection filtering using IoU
 
 ### 🚧 Severity Classification
 
-Detected road damage can be categorized into:
+Road damage can be categorized as:
 
 * 🟢 Low
 * 🟡 Medium
 * 🔴 High
 
-High-severity incidents can receive additional processing and evidence capture.
+### 📍 GPS Integration
 
-### 📍 GPS-Based Inspection
+High-severity detections can be associated with GPS information to help identify the location of road damage.
 
-The system can optionally capture location information for detected road incidents.
-
-This helps authorities understand **where road damage is occurring**.
-
-### 📊 Driver Dashboard
-
-The field/driver dashboard provides:
+### 🚗 Driver / Field Dashboard
 
 * Live camera feed
 * Inspection session controls
 * Detection counters
-* Detection information
+* Detection feed
 * Charts and analytics
 * Alert states
 
 ### 🏛️ Municipal Dashboard
 
-The municipal interface allows authorized reviewers to:
+Municipal users can:
 
 * Review high-severity detections
-* Approve incidents
-* Decline incidents
+* Approve detections
+* Decline detections
 * View locations on a map
-* Generate reports
+* Generate PDF reports
 
-### 💾 Data Management
+### 🔔 Alert Integration
 
-IRIS uses **SQLite** for local persistence of inspection sessions, detections, approval status, and related metadata.
+Optional hardware and voice alerts can be used for high-severity detections.
 
-### 🔔 Alert System
+### 🧠 AI Analysis
 
-The system can optionally provide:
+Optional Google Gemini integration can provide additional analysis and prioritization context.
 
-* Voice alerts
-* Arduino LED/buzzer alerts
-* High-severity notifications
+### ☁️ Cloud Integration
 
-### 🧠 Optional AI Analysis
-
-Google Gemini can optionally be integrated for additional incident analysis and prioritization.
-
-### ☁️ Optional Cloud Integration
-
-Firebase/Firestore support can be used for cloud-backed data synchronization.
+Optional Firebase / Firestore integration can be used for cloud-backed records.
 
 ---
 
-## 🧠 AI / ML Pipeline
+## 🧠 AI Pipeline
 
 ```text
-Road Image / Video
-        ↓
-Image Processing
-        ↓
-YOLOv8 Model
-        ↓
+Road Frame
+    ↓
+OpenCV Processing
+    ↓
+YOLOv8 Inference
+    ↓
 Pothole Detection
-        ↓
+    ↓
 Confidence Evaluation
-        ↓
-Duplicate Filtering
-        ↓
+    ↓
+IoU-Based Deduplication
+    ↓
 Severity Classification
-        ↓
-Incident Storage
+    ↓
+GPS + Evidence
+    ↓
+Database
+    ↓
+Municipal Review
 ```
 
 ---
@@ -164,7 +150,7 @@ Incident Storage
 
 | Category                | Technology              |
 | ----------------------- | ----------------------- |
-| Programming             | Python                  |
+| Programming Language    | Python                  |
 | AI / Object Detection   | YOLOv8 / Ultralytics    |
 | Computer Vision         | OpenCV                  |
 | Backend                 | Flask                   |
@@ -173,9 +159,9 @@ Incident Storage
 | Frontend                | HTML, CSS, JavaScript   |
 | Charts                  | Chart.js                |
 | Maps                    | Leaflet + OpenStreetMap |
-| Reports                 | ReportLab               |
+| PDF Reports             | ReportLab               |
 | GPS                     | Windows Location API    |
-| Hardware                | Arduino + PySerial      |
+| Hardware Alerts         | Arduino + PySerial      |
 | Voice Alerts            | pyttsx3                 |
 | Optional AI             | Google Gemini           |
 | Optional Cloud          | Firebase / Firestore    |
@@ -186,98 +172,85 @@ Incident Storage
 ## 🏗️ System Architecture
 
 ```text
-                   CAMERA / VIDEO
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │    YOLOv8     │
-                 │ Detection     │
-                 └───────┬───────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │ Detection Processing │
-              │ + Deduplication      │
-              │ + Severity           │
-              └──────────┬──────────┘
-                         │
-              ┌──────────┴──────────┐
-              ▼                     ▼
-       DRIVER DASHBOARD       HIGH SEVERITY
-                                    │
-                    ┌───────────────┼───────────────┐
-                    ▼               ▼               ▼
-                 Snapshot          GPS          Alerts
-                    │               │               │
-                    └───────────────┼───────────────┘
-                                    ▼
-                              SQLite Storage
-                                    │
-                                    ▼
-                         MUNICIPAL DASHBOARD
-                                    │
-                    ┌───────────────┼───────────────┐
-                    ▼               ▼               ▼
-                 Review           Map            Reports
-                    │
-              Approve / Decline
+                    ┌─────────────────┐
+                    │ Camera / Video  │
+                    └────────┬────────┘
+                             ↓
+                    ┌─────────────────┐
+                    │     YOLOv8      │
+                    │ Detection Engine│
+                    └────────┬────────┘
+                             ↓
+              ┌────────────────────────────┐
+              │ Detection Processing       │
+              │ • Confidence               │
+              │ • Deduplication             │
+              │ • Severity Classification  │
+              └─────────────┬──────────────┘
+                            ↓
+                    ┌───────────────┐
+                    │   Dashboard   │
+                    └───────┬───────┘
+                            ↓
+                    High Severity
+                            ↓
+             ┌──────────────┼──────────────┐
+             ↓              ↓              ↓
+           GPS          Snapshot        Alerts
+             └──────────────┼──────────────┘
+                            ↓
+                     SQLite Database
+                            ↓
+                 Municipal Dashboard
+                            ↓
+              Review / Approve / Decline
+                            ↓
+                      PDF Reports
 ```
 
 ---
 
-## 📸 Project Screenshots
+## 📊 Project Workflow
 
-Screenshots from the project are available in the [`screenshots`](screenshots) folder.
+### 1️⃣ Start Inspection
 
-### 🚗 Driver Dashboard
+A field operator starts an inspection session using a camera, video, or IP camera.
 
-![Driver Dashboard](screenshots/driver-dashboard.png)
+### 2️⃣ Detect Road Damage
 
-### 🏛️ Municipal Dashboard
+The YOLOv8 model analyzes incoming frames and identifies potholes.
 
-![Municipal Dashboard](screenshots/municipal-dashboard.png)
+### 3️⃣ Process Detection
 
-### 🚧 Pothole Detection
+The system evaluates confidence and filters duplicate detections.
 
-![Pothole Detection](screenshots/pothole-detection.png)
+### 4️⃣ Classify Severity
 
-> Replace the filenames above with the **actual filenames** inside your `screenshots` folder.
+Detected potholes are classified according to their severity.
 
----
+### 5️⃣ Record Evidence
 
-## 👨‍💻 My Role
+High-severity detections can trigger snapshot capture and GPS collection.
 
-### Team Member
+### 6️⃣ Store Data
 
-I am contributing to the **IRIS team project** as a team member.
+Inspection information is stored using the local SQLite database.
 
-My contribution areas include:
+### 7️⃣ Municipal Review
 
-* 💻 Development and implementation support
-* 🧪 Testing and debugging
-* 📚 Project documentation
-* 🖥️ Interface / presentation improvements
-* 🔧 Feature integration and project refinement
+Authorities can review detections through the municipal dashboard.
 
-> **Note:** Update this section with your exact contribution before publishing. Do not claim features that you did not personally work on.
+### 8️⃣ Generate Reports
+
+Approved detections can be included in PDF reports for further action.
 
 ---
 
-## 👥 Team
+## 📸 Screenshots
 
-### Project Lead
+Project screenshots are available in the `screenshots/` folder.
 
-**Adarsh Arya**
-
-Repository:
-https://github.com/itsaddyon/IRIS
-
-### Team Member
-
-**Saumay Raj**
-
-Repository:
-https://github.com/saumayraj621-sudo
+> Add the actual screenshot filenames here after checking your folder.
 
 ---
 
@@ -286,47 +259,47 @@ https://github.com/saumayraj621-sudo
 ```text
 IRIS/
 │
-├── .github/
-├── arduino/
 ├── database/
 ├── detector/
 ├── docs/
 ├── face_scan/
 ├── web/
+├── arduino/
 │
-├── auth.py
-├── config.py
-├── gps.py
 ├── main.py
+├── config.py
+├── auth.py
+├── gps.py
+├── session_manager.py
 ├── vehicles.py
 ├── voice_alert.py
 ├── gemini_analyzer.py
+├── arduino_controller.py
 │
 ├── requirements.txt
 ├── Dockerfile
-├── firebase.json
 ├── README.md
 └── ...
 ```
 
 ---
 
-## 🚀 Installation
+## 🚀 Getting Started
 
-### 1. Clone the repository
+### Clone the Project
 
 ```bash
 git clone https://github.com/itsaddyon/IRIS.git
 cd IRIS
 ```
 
-### 2. Create a virtual environment
+### Create Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### 3. Activate the environment
+### Activate Environment
 
 **Windows:**
 
@@ -334,76 +307,112 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### 4. Install dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Configure the required environment variables
+### Start Application
 
-Keep API keys, passwords, service-account credentials, and other secrets outside the public repository.
+```bash
+python main.py
+```
 
-### 6. Start the application
-
-Follow the project's current setup instructions and configuration requirements.
+The application can then be accessed through the configured local dashboard.
 
 ---
 
 ## 🔐 Security
 
-IRIS keeps sensitive credentials outside the public repository.
+Sensitive information should never be committed to GitHub.
 
-Examples include:
+This includes:
 
 * API keys
-* Secret keys
-* Database credentials
-* Firebase service-account credentials
-* Administrative passwords
+* Passwords
+* Firebase service-account files
+* `.env` files
+* Private credentials
+* Private biometric information
 
-Never commit real credentials to GitHub.
+Use environment variables for sensitive configuration.
 
 ---
 
 ## 🔮 Future Scope
 
-IRIS can be further improved through:
+IRIS can be further enhanced with:
 
 * 📱 Dedicated mobile application
-* 🛰️ More accurate GPS-based road mapping
-* 🏙️ City-wide road-condition monitoring
-* 📹 Multiple-camera integration
-* 🧠 Improved detection models
-* 📈 Predictive road-maintenance analytics
+* 🛰️ Improved GPS and road mapping
+* 🏙️ City-wide road monitoring
+* 📹 Multi-camera support
+* 🧠 Improved AI models
+* 📈 Predictive maintenance
 * 🚨 Automated authority notifications
 * ☁️ Scalable cloud infrastructure
 * 🗺️ Road-condition heatmaps
-* 📊 Long-term infrastructure analytics
+* 📊 Long-term road-condition analytics
+* 🧪 Automated testing and model evaluation
 
 ---
 
-## 🌍 Impact
+## 👥 Team Contribution
 
-IRIS aims to support a shift from:
+IRIS is developed as a **team project**.
 
-**Manual Inspection → Intelligent Inspection**
+### Project Lead
 
-By combining AI, computer vision, location information, and digital dashboards, the system can help create a more structured approach to identifying and managing road damage.
+**Adarsh Arya**
+
+GitHub:
+https://github.com/itsaddyon
+
+### Team Member
+
+**Saumay Raj**
+
+GitHub:
+https://github.com/saumayraj621-sudo
+
+### My Role
+
+As a team member, my contribution to IRIS includes supporting the project's:
+
+* Development
+* Testing and debugging
+* Documentation
+* UI / presentation improvements
+* Feature integration
+* Project refinement
+
+> This section should be updated with the exact modules/features personally contributed by each team member.
 
 ---
 
-## ⭐ Project Vision
+## 🌍 Vision
 
-> **Detect earlier. Locate accurately. Respond faster.**
+IRIS aims to transform traditional road inspection into an intelligent workflow:
 
-IRIS aims to make road inspection more intelligent, scalable, and data-driven.
+```text
+Detect → Locate → Classify → Review → Maintain
+```
+
+By combining **Artificial Intelligence, Computer Vision, GPS, dashboards, and analytics**, IRIS provides a foundation for smarter road infrastructure monitoring.
+
+---
+
+## ⭐ IRIS
+
+### Smarter Roads. Faster Detection. Better Infrastructure.
 
 ---
 
 ## 📜 Project Information
 
 **Project:** IRIS — Intelligent Road Inspection System
-**Domain:** Artificial Intelligence / Machine Learning / Computer Vision
-**Application:** Smart Infrastructure & Road Safety
+**Domain:** Artificial Intelligence & Machine Learning
+**Focus:** Computer Vision & Smart Infrastructure
+**Application:** Road Safety & Automated Inspection
 **Development:** Team Project

@@ -1,44 +1,30 @@
-# My Contribution to IRIS
+# 👨‍💻 My Contribution to IRIS
 
-## Role
+## Team Member
 
-I contributed to **IRIS — Intelligent Road Inspection System** as a team member, focusing on:
+I am a team member contributing to the development and improvement of **IRIS — Intelligent Road Inspection System**.
 
-* Frontend development
-* Dashboard development
-* Project documentation
+### Areas of Contribution
 
-## Frontend
+* 🔧 Project development and implementation support
+* 🧪 Testing and debugging
+* 📚 Technical documentation
+* 🖥️ UI and presentation improvements
+* 🔗 Feature integration
+* 🚀 Repository and project documentation improvements
 
-I contributed to the user-facing web interface of the IRIS system, helping organize the inspection experience and present road-inspection information in a clear and usable format.
+## Project
 
-## Dashboard
+**IRIS — Intelligent Road Inspection System**
 
-I worked around the dashboard side of the system, including the presentation of:
+IRIS is an AI-powered road inspection platform that uses computer vision and YOLOv8 to detect and analyze road damage.
 
-* Live inspection information
-* Detection counters
-* Charts and visual statistics
-* Detection information
-* Alert and review states
-* Municipal review information
+## Team
 
-The team project documents an active driver dashboard with live feed, inspection controls, counters, charts, and alerts, along with an active municipal dashboard for reviewing high-severity detections.
+**Project Lead:** Adarsh Arya
 
-## Documentation
+**Team Member:** Saumay Raj
 
-I contributed to organizing and presenting project information so that the system workflow, interface, and major features could be understood more clearly.
+---
 
-## Project Context
-
-IRIS is an AI-powered road inspection system using YOLOv8-based pothole detection, severity classification, inspection-session tracking, dashboard visualization, and municipal review workflows.
-
-## Team Project
-
-This was a collaborative team project.
-
-My personal contribution was focused on **frontend, dashboard, and documentation**, rather than claiming ownership of the complete IRIS system.
-
-### Original Repository
-
-https://github.com/itsaddyon/IRIS
+> This document records my contribution as a team member to the IRIS project.

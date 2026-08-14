@@ -167,17 +167,40 @@ Review & Reporting
 └──────────────────────┘
 ## 📸 Demo & Project Showcase
 
-### 🖥️ Operations Portal
-![Operations Portal](screenshots/portal.png)
+### 🔧 Hardware Prototype & Edge Integration
 
-### 🔍 Detection Details
-![Detection Details](screenshots/detection-detail.png)
+![IRIS Hardware Prototype](screenshots/hardware.png)
 
-### 🗺️ Road Vision
-![Road Vision](screenshots/roadvision.png)
+Physical inspection setup with camera-based road monitoring and hardware alert integration.
 
-### 🚗 Inspection Session
-![Inspection Session](screenshots/session.png)
+---
 
-### 🔧 Hardware Setup
-![Hardware Setup](screenshots/hardware.png)
+### 🖥️ Operations Portal & GIS Mapping
+
+![IRIS Operations Portal](screenshots/portal.png)
+
+Central dashboard for reviewing detections, inspection information, severity, and road locations.
+
+---
+
+### 🔍 Live Session Detection
+
+![IRIS Detection Details](screenshots/detection-detail.png)
+
+Detailed view of a detected road issue with detection information and inspection evidence.
+
+---
+
+### 🖼️ High-Resolution Evidence
+
+![IRIS Inspection Session](screenshots/session.png)
+
+Inspection-session evidence used for reviewing detected road conditions.
+
+---
+
+### 🗺️ Road Vision 3D
+
+![IRIS Road Vision](screenshots/roadvision.png)
+
+Interactive road-vision visualization for presenting detected road-surface conditions.

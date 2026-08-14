@@ -2,7 +2,11 @@
 
 > **AI-powered road inspection and pothole detection system for smarter, faster, and data-driven road maintenance.**
 
-**Detect • Classify • Locate • Review • Improve**
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Object%20Detection-purple.svg)](https://github.com/ultralytics/ultralytics)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green.svg)](https://opencv.org/)
+[![Flask](https://img.shields.io/badge/Flask-Web%20Application-black.svg)](https://flask.palletsprojects.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey.svg)](https://www.sqlite.org/)
 
 ---
 
@@ -10,9 +14,9 @@
 
 **IRIS (Intelligent Road Inspection System)** is an AI-powered road monitoring and inspection platform designed to automate pothole detection and improve road-maintenance workflows.
 
-The system uses computer vision and **YOLOv8** to identify road damage, classify its severity, reduce duplicate detections, capture GPS-tagged inspection events, and present useful information through an operations dashboard.
+The system combines **computer vision, YOLOv8, GPS-based inspection data, backend processing, and an operations dashboard** to support faster and more organized road-condition monitoring.
 
-IRIS combines **AI, computer vision, GPS data, backend processing, and dashboard-based visualization** to support faster and more organized road inspection.
+IRIS can detect road damage from inspection imagery, process detection information, associate inspection events with location data, and present the results through a centralized dashboard.
 
 ---
 
@@ -21,47 +25,47 @@ IRIS combines **AI, computer vision, GPS data, backend processing, and dashboard
 Traditional road inspection can be:
 
 - Manual and time-consuming
-- Difficult to scale across large road networks
+- Difficult to scale
 - Dependent on periodic physical surveys
 - Difficult to monitor continuously
 - Challenging to prioritize based on severity and location
 
-IRIS aims to provide a more automated and data-driven approach to road-condition monitoring.
+IRIS aims to provide a more **automated, visual, and data-driven approach** to road inspection.
 
 ---
 
 ## 🚀 Key Features
 
-### 🤖 AI-Powered Pothole Detection
+### 🤖 AI-Powered Detection
 
-- YOLOv8-based object detection
-- Real-time road inspection
-- Detection confidence tracking
+- YOLOv8-based road-damage detection
+- Computer-vision-based inspection
+- Detection confidence information
 - Pothole severity classification
-- Duplicate detection handling using IoU
+- Duplicate detection handling
 
 ### 📍 GPS-Based Inspection
 
-- GPS-tagged road events
+- GPS-tagged inspection events
 - Location-aware detection records
 - Road inspection mapping
-- Location-based review and analysis
+- Location-based review
 
 ### 📊 Operations Dashboard
 
-- Inspection session overview
+- Inspection session monitoring
 - Detection statistics
 - Pothole review interface
 - Severity information
 - Inspection data visualization
 - Dashboard-based monitoring
 
-### 🗺️ GIS & Road Visualization
+### 🗺️ Road Visualization
 
-- Pothole locations on maps
 - Road inspection visualization
-- Location-based analysis
-- Visual representation of detected road issues
+- Detection locations
+- GIS-based information
+- Visual representation of road conditions
 
 ### 📄 Reporting
 
@@ -72,29 +76,33 @@ IRIS aims to provide a more automated and data-driven approach to road-condition
 
 ### 🔧 Hardware Integration
 
-The project also supports a physical inspection setup involving camera-based road monitoring and an Arduino-based alert mechanism for high-severity detections.
+The project supports a physical road-inspection setup involving camera-based monitoring and hardware-based alerts for road-condition events.
 
 ---
 
-## 🎨 My Contribution — Frontend & Dashboard
+# 🎨 My Contribution — Frontend & Dashboard
 
 I contributed to IRIS as a **team member**, with my primary focus on **Frontend Development and Dashboard implementation**.
 
-### Frontend Development
+## Frontend Development
 
-- Worked on the user-facing interface
-- Improved frontend layout and presentation
-- Worked on interface components
-- Improved usability and visual organization
-- Supported integration of frontend components with project functionality
+My contribution included:
 
-### Dashboard Development
+- Working on the user-facing interface
+- Improving frontend layout and presentation
+- Working on interface components
+- Improving usability and visual organization
+- Supporting frontend integration with project functionality
 
-- Worked on the operations dashboard interface
-- Organized inspection and detection information
-- Improved dashboard presentation
-- Worked on data visualization and monitoring views
-- Supported the presentation of road-inspection information
+## Dashboard Development
+
+My contribution to the dashboard included:
+
+- Working on dashboard layout and organization
+- Presenting inspection information
+- Presenting detection-related information
+- Improving dashboard usability
+- Supporting data visualization and monitoring views
 
 ### Relevant Code
 
@@ -108,99 +116,3 @@ web/
 ├── app.py
 ├── index.html
 └── report.py
----
-
-## 🔄 System Workflow
-
-Camera / Video Feed
-        ↓
-YOLOv8 Detection
-        ↓
-Pothole Identification
-        ↓
-Severity Classification
-        ↓
-Duplicate Detection Handling
-        ↓
-GPS / Inspection Data
-        ↓
-Flask Backend
-        ↓
-Operations Dashboard
-        ↓
-Review & Reporting
-
----
-
-## 🏗️ System Architecture
-
-```text
-┌──────────────────────┐
-│   Camera / Video     │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│       YOLOv8         │
-│   Object Detection   │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Severity + IoU       │
-│     Processing       │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ GPS / Inspection     │
-│       Data           │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│    Flask Backend     │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│ Operations Dashboard │
-└──────────┬───────────┘
-           ↓
-┌──────────────────────┐
-│  Review & Reporting  │
-└──────────────────────┘
-## 📸 Demo & Project Showcase
-
-### 🔧 Hardware Prototype & Edge Integration
-
-![IRIS Hardware Prototype](screenshots/hardware.png)
-
-Physical inspection setup with camera-based road monitoring and hardware alert integration.
-
----
-
-### 🖥️ Operations Portal & GIS Mapping
-
-![IRIS Operations Portal](screenshots/portal.png)
-
-Central dashboard for reviewing detections, inspection information, severity, and road locations.
-
----
-
-### 🔍 Live Session Detection
-
-![IRIS Detection Details](screenshots/detection-detail.png)
-
-Detailed view of a detected road issue with detection information and inspection evidence.
-
----
-
-### 🖼️ High-Resolution Evidence
-
-![IRIS Inspection Session](screenshots/session.png)
-
-Inspection-session evidence used for reviewing detected road conditions.
-
----
-
-### 🗺️ Road Vision 3D
-
-![IRIS Road Vision](screenshots/roadvision.png)
-
-Interactive road-vision visualization for presenting detected road-surface conditions.

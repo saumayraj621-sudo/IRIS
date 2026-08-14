@@ -1,4 +1,4 @@
-## 👥 Team Contribution
+##  Team Contribution
 
 IRIS is a team project focused on AI-powered road inspection and pothole detection.
 

@@ -108,3 +108,60 @@ web/
 ├── app.py
 ├── index.html
 └── report.py
+---
+
+## 🔄 System Workflow
+
+Camera / Video Feed
+        ↓
+YOLOv8 Detection
+        ↓
+Pothole Identification
+        ↓
+Severity Classification
+        ↓
+Duplicate Detection Handling
+        ↓
+GPS / Inspection Data
+        ↓
+Flask Backend
+        ↓
+Operations Dashboard
+        ↓
+Review & Reporting
+
+---
+
+## 🏗️ System Architecture
+
+```text
+┌──────────────────────┐
+│   Camera / Video     │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│       YOLOv8         │
+│   Object Detection   │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ Severity + IoU       │
+│     Processing       │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ GPS / Inspection     │
+│       Data           │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│    Flask Backend     │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ Operations Dashboard │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│  Review & Reporting  │
+└──────────────────────┘

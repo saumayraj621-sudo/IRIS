@@ -165,3 +165,19 @@ Review & Reporting
 ┌──────────────────────┐
 │  Review & Reporting  │
 └──────────────────────┘
+## 📸 Demo & Project Showcase
+
+### 🖥️ Operations Portal
+![Operations Portal](screenshots/portal.png)
+
+### 🔍 Detection Details
+![Detection Details](screenshots/detection-detail.png)
+
+### 🗺️ Road Vision
+![Road Vision](screenshots/roadvision.png)
+
+### 🚗 Inspection Session
+![Inspection Session](screenshots/session.png)
+
+### 🔧 Hardware Setup
+![Hardware Setup](screenshots/hardware.png)

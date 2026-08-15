@@ -1,1 +1,7 @@
+Flask
+opencv-python
+reportlab
+Pillow
+numpy
+ultralytics
 

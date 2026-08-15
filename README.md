@@ -1,48 +1,36 @@
 # 🚧 IRIS — Intelligent Road Inspection System
 
-<p align="center">
-
 ### AI-Powered Road Inspection & Pothole Detection System
 
-**Making road inspection smarter, faster, and data-driven using Artificial Intelligence and Computer Vision.**
-
-</p>
+Making road inspection smarter, faster, and data-driven using Artificial Intelligence and Computer Vision.
 
 ---
 
 ## 📌 About
 
-**IRIS (Intelligent Road Inspection System)** is an AI-powered road inspection and pothole detection system designed to assist in identifying road defects using computer vision and machine learning.
-
-The system focuses on detecting potholes and road conditions from visual input and presenting the inspection information through a web-based interface.
-
-IRIS combines technologies such as **YOLOv8, OpenCV, Python, Flask, GPS, and web technologies** to create a practical solution for intelligent road monitoring.
-
-The goal is to reduce dependency on completely manual road inspection and provide a faster, more scalable approach to identifying road problems.
+**IRIS (Intelligent Road Inspection System)** is an AI-powered road inspection platform designed to **detect potholes and road damage automatically**. It uses **YOLOv8, Computer Vision, OpenCV, GPS, Python, and Flask** to analyze road images, identify damaged areas, and provide accurate, data-driven insights for **smarter and more efficient road monitoring and maintenance**.
 
 ---
 
 ## 🎯 Problem Statement
 
-Road damage such as potholes can lead to:
+Road damage such as potholes can cause:
 
 * 🚗 Vehicle damage
-* ⚠️ Road accidents
+* ⚠️ Road safety risks
 * 🚦 Traffic problems
-* 💰 Increased maintenance costs
-* 🏙️ Poor urban infrastructure management
+* 💰 Higher maintenance costs
+* 🏙️ Difficult infrastructure management
 
-Traditional road inspection can require significant human effort and time.
+Traditional road inspection can be time-consuming and heavily dependent on manual work.
 
-**IRIS aims to support road authorities and infrastructure teams by automatically detecting road defects and providing useful inspection information.**
+**IRIS aims to make road inspection faster, more automated, and data-driven.**
 
 ---
 
-# 💡 Our Solution
+## 💡 Our Solution
 
-IRIS uses computer vision and AI-based object detection to analyze road imagery.
-
-The general process is:
+IRIS combines **Computer Vision, AI-based object detection, GPS, and a web interface** to support intelligent road inspection.
 
 ```text
 Road / Camera Input
@@ -53,9 +41,9 @@ Computer Vision
         ↓
 YOLOv8 Detection
         ↓
-Pothole / Road Defect Detection
+Pothole / Road Damage Detection
         ↓
-Location / Inspection Data
+Location & Inspection Data
         ↓
 Web Interface
         ↓
@@ -68,41 +56,41 @@ Road Inspection Analysis
 
 ## 🌐 IRIS Web Portal
 
-![IRIS Portal](screenshots/portal.png)
+The main web portal provides an interface for interacting with the road inspection system.
 
-The web portal provides the interface for viewing and interacting with road inspection information.
+![IRIS Web Portal](screenshots/portal.png)
 
 ---
 
 ## 🛣️ Road Vision
 
-![Road Vision](screenshots/roadvision.png)
+The Road Vision interface demonstrates the visual road-inspection workflow.
 
-The road-vision interface demonstrates the visual inspection and AI-based road detection workflow.
+![Road Vision](screenshots/roadvision.png)
 
 ---
 
 ## 🔎 Detection Details
 
-![Detection Details](screenshots/detection-detail.png)
+Detection details provide information about identified road defects and inspection results.
 
-Detection details provide information about identified road defects and the corresponding inspection results.
+![Detection Details](screenshots/detection-detail.png)
 
 ---
 
 ## 🖥️ Inspection Session
 
-![Inspection Session](screenshots/session.png)
+The inspection-session interface demonstrates how an inspection can be monitored and organized.
 
-The inspection-session interface demonstrates how an inspection can be monitored and organized during operation.
+![Inspection Session](screenshots/session.png)
 
 ---
 
 ## ⚙️ Hardware Setup
 
-![Hardware Setup](screenshots/hardware.png)
+The hardware setup demonstrates the physical components used for the road-inspection concept.
 
-The hardware setup demonstrates the physical components used as part of the road-inspection concept.
+![Hardware Setup](screenshots/hardware.png)
 
 ---
 
@@ -110,50 +98,50 @@ The hardware setup demonstrates the physical components used as part of the road
 
 ### 🕳️ AI Pothole Detection
 
-Uses AI-based object detection to identify potholes and road defects from visual input.
+Detects potholes and road defects using AI-based object detection.
 
 ### 🎥 Road Inspection
 
-Supports visual road inspection using camera/image-based input.
+Supports visual inspection using camera and image-based input.
 
 ### 🧠 YOLOv8
 
-Uses the YOLOv8 object-detection architecture for identifying road defects.
+Uses YOLOv8 for object detection and road-defect identification.
 
 ### 📷 Computer Vision
 
-OpenCV can be used for image and video processing within the inspection pipeline.
+Uses OpenCV for image and visual processing.
 
 ### 📍 GPS Integration
 
-Location information can be associated with inspection data to help identify where road defects occur.
+Associates inspection information with location data.
 
 ### 🌐 Web Interface
 
-A web-based interface provides a convenient way to interact with the inspection system.
+Provides a web-based interface for interacting with inspection information.
 
-### 📊 Inspection Information
+### 📊 Inspection Reports
 
-Detection and inspection information can be presented through the system for easier analysis.
+Provides organized inspection information for easier analysis.
 
 ### 🏙️ Smart-City Application
 
-The concept can support intelligent infrastructure monitoring and smart-city road maintenance.
+Designed with intelligent infrastructure and smart-city road monitoring in mind.
 
 ---
 
-# 🧠 Technology Stack
+# 🛠️ Technology Stack
 
-| Technology | Purpose                              |
-| ---------- | ------------------------------------ |
-| 🐍 Python  | Core programming                     |
-| 🤖 YOLOv8  | Object detection                     |
-| 👁️ OpenCV | Computer vision and image processing |
-| 🌐 Flask   | Web application/backend              |
-| 📍 GPS     | Location tracking                    |
-| HTML       | Web structure                        |
-| CSS        | Web styling                          |
-| JavaScript | Web interaction                      |
+| Technology | Purpose              |
+| ---------- | -------------------- |
+| 🐍 Python  | Core development     |
+| 🤖 YOLOv8  | Object detection     |
+| 👁️ OpenCV | Computer vision      |
+| 🌐 Flask   | Web application      |
+| 📍 GPS     | Location information |
+| HTML       | Web structure        |
+| CSS        | Web styling          |
+| JavaScript | Web interaction      |
 
 ---
 
@@ -163,43 +151,35 @@ The concept can support intelligent infrastructure monitoring and smart-city roa
                  ┌─────────────────────┐
                  │   Camera / Input    │
                  └──────────┬──────────┘
-                            │
-                            ▼
+                            ↓
                  ┌─────────────────────┐
                  │  Image Processing   │
-                 │      OpenCV         │
+                 │       OpenCV        │
                  └──────────┬──────────┘
-                            │
-                            ▼
+                            ↓
                  ┌─────────────────────┐
-                 │    YOLOv8 Model     │
-                 │  Object Detection   │
+                 │     YOLOv8 Model    │
+                 │   Object Detection  │
                  └──────────┬──────────┘
-                            │
-                            ▼
+                            ↓
                  ┌─────────────────────┐
-                 │ Pothole / Defect    │
-                 │     Detection       │
+                 │ Pothole / Road      │
+                 │ Damage Detection    │
                  └──────────┬──────────┘
-                            │
-                   ┌────────┴────────┐
-                   ▼                 ▼
-          ┌────────────────┐  ┌───────────────┐
-          │   GPS / Data   │  │ Detection     │
-          │   Information  │  │ Information   │
-          └────────┬───────┘  └───────┬───────┘
-                   │                  │
-                   └────────┬─────────┘
-                            ▼
+                            ↓
                  ┌─────────────────────┐
-                 │    Flask / Web      │
-                 │      Interface      │
+                 │ GPS / Inspection    │
+                 │ Information         │
                  └──────────┬──────────┘
-                            │
-                            ▼
+                            ↓
                  ┌─────────────────────┐
-                 │  Road Inspection    │
-                 │     Dashboard       │
+                 │    Flask Web        │
+                 │     Interface       │
+                 └──────────┬──────────┘
+                            ↓
+                 ┌─────────────────────┐
+                 │ Road Inspection     │
+                 │ Dashboard           │
                  └─────────────────────┘
 ```
 
@@ -207,29 +187,29 @@ The concept can support intelligent infrastructure monitoring and smart-city roa
 
 # 🔄 How It Works
 
-## 1️⃣ Capture
+### 1️⃣ Capture
 
-Road imagery or video is obtained using the inspection input/camera.
+Road images or video are collected through the inspection input.
 
-## 2️⃣ Processing
+### 2️⃣ Processing
 
-The incoming visual data is processed using computer-vision techniques.
+The visual input is processed using computer-vision techniques.
 
-## 3️⃣ Detection
+### 3️⃣ Detection
 
-YOLOv8 analyzes the input and detects relevant road defects.
+YOLOv8 analyzes the input and identifies relevant road defects.
 
-## 4️⃣ Location
+### 4️⃣ Location
 
-GPS information can be associated with the inspection data.
+GPS information can be associated with inspection data.
 
-## 5️⃣ Visualization
+### 5️⃣ Visualization
 
-The results are presented through the web interface.
+Results are presented through the web interface.
 
-## 6️⃣ Analysis
+### 6️⃣ Analysis
 
-The collected information can help users understand road conditions and identify areas requiring attention.
+Inspection information can help identify road conditions and areas requiring attention.
 
 ---
 
@@ -239,7 +219,6 @@ The collected information can help users understand road conditions and identify
 IRIS/
 │
 ├── screenshots/
-│   │
 │   ├── detection-detail.png
 │   ├── hardware.png
 │   ├── portal.png
@@ -247,9 +226,20 @@ IRIS/
 │   └── session.png
 │
 ├── web/
+│   ├── static/
+│   │   ├── images/
+│   │   └── css
+│   ├── templates/
+│   │   └── index.html
+│   ├── __init__.py
+│   ├── app.py
+│   └── report.py
 │
 ├── docs/
-│
+├── .github/
+├── .gitignore
+├── LICENSE
+├── requirements.txt
 └── README.md
 ```
 
@@ -257,23 +247,23 @@ IRIS/
 
 # 🖥️ Web Interface
 
-The IRIS web interface is designed to provide a simple way to view road inspection information.
+The IRIS web interface is designed to provide a simple way to interact with road-inspection information.
 
-The interface focuses on:
+It focuses on:
 
-* Road inspection
-* Detection visualization
-* Inspection sessions
-* Detection details
-* Road-condition monitoring
+* 🛣️ Road inspection
+* 🔎 Detection visualization
+* 🖥️ Inspection sessions
+* 📊 Detection information
+* 🚧 Road-condition monitoring
 
 ---
 
 # 📊 Detection & Inspection
 
-The system is designed around an AI-based detection pipeline.
+The system is designed around an AI-assisted detection workflow.
 
-Detected road defects can be presented along with relevant inspection information, making it easier to understand:
+Inspection information can help users understand:
 
 * What was detected
 * Where the inspection occurred
@@ -283,8 +273,6 @@ Detected road defects can be presented along with relevant inspection informatio
 ---
 
 # 🌍 Real-World Applications
-
-IRIS can potentially be used in:
 
 ### 🏙️ Smart Cities
 
@@ -296,19 +284,19 @@ Supporting inspection teams in identifying road defects.
 
 ### 🚧 Municipal Road Maintenance
 
-Helping authorities identify areas that may require repair.
+Helping identify roads that may require repair.
 
 ### 🚗 Road Safety
 
-Early identification of potholes and other road problems can support safer roads.
+Supporting early identification of potholes and road problems.
 
 ### 📍 Road Condition Mapping
 
-Location-based inspection data can help create road-condition maps.
+Using location information to support road-condition mapping.
 
 ### 🏗️ Infrastructure Management
 
-AI-assisted inspection can support large-scale infrastructure monitoring.
+Supporting large-scale infrastructure monitoring.
 
 ---
 
@@ -317,45 +305,43 @@ AI-assisted inspection can support large-scale infrastructure monitoring.
 Clone the repository:
 
 ```bash
-git clone https://github.com/saumayraj621-sudo/IRISbro.git
+git clone https://github.com/saumayraj621-sudo/IRIS.git
+cd IRIS
 ```
 
-Move into the project directory:
-
-```bash
-cd IRISbro
-```
-
-Install the required Python dependencies if a `requirements.txt` file is provided:
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then run the project using the application's configured startup command.
+Run the Flask application:
 
-> **Note:** The exact run command depends on the current backend/application structure.
+```bash
+python web/app.py
+```
+
+Then open the local Flask address in your browser.
+
+> The exact runtime behavior may depend on the current application configuration.
 
 ---
 
 # 🔧 Development
 
-The project is organized so that the web interface and supporting documentation/assets can be maintained separately.
-
-Current repository components include:
+The repository separates the web application, demonstration screenshots, and documentation.
 
 ```text
 screenshots/    → Project demonstration images
-web/            → Web interface/application files
-docs/           → Documentation
+web/            → Web application
+docs/           → Project documentation
+requirements.txt → Python dependencies
 README.md       → Project documentation
 ```
 
 ---
 
 # 🔮 Future Scope
-
-IRIS can be extended with several advanced capabilities.
 
 ### 🤖 Improved AI Models
 
@@ -379,11 +365,11 @@ Generate road-condition statistics and maintenance reports.
 
 ### 🚨 Severity Detection
 
-Classify potholes based on their severity and potential risk.
+Classify road damage according to severity and potential risk.
 
-### 🏛️ Government / Municipal Integration
+### 🏛️ Municipal Integration
 
-Provide infrastructure teams with tools for managing and prioritizing road repairs.
+Provide infrastructure teams with tools for managing road repairs.
 
 ### 🔔 Automated Alerts
 
@@ -395,7 +381,7 @@ Notify relevant authorities when significant road defects are detected.
 
 The primary objective of IRIS is to demonstrate how **Artificial Intelligence, Computer Vision, GPS, and Web Technologies** can be combined to create an intelligent road-inspection solution.
 
-The project focuses on turning road inspection from a primarily manual process into a more **automated, visual, and data-driven workflow**.
+The project focuses on making road inspection more **automated, visual, and data-driven**.
 
 ---
 
@@ -403,7 +389,7 @@ The project focuses on turning road inspection from a primarily manual process i
 
 > **Detect. Analyze. Locate. Improve.**
 
-IRIS aims to contribute toward smarter infrastructure by using AI to understand road conditions and provide useful information for better road maintenance.
+IRIS aims to contribute toward smarter infrastructure by using AI and computer vision to understand road conditions and support better road maintenance.
 
 ---
 
@@ -413,9 +399,9 @@ IRIS aims to contribute toward smarter infrastructure by using AI to understand 
 
 **Domain:** Artificial Intelligence / Machine Learning / Computer Vision
 
-**Primary Application:** Road Inspection & Pothole Detection
+**Application:** Road Inspection & Pothole Detection
 
-**Repository:** `IRISbro`
+**Repository:** IRIS
 
 ---
 
@@ -425,10 +411,6 @@ If you find this project interesting, consider giving the repository a ⭐ on Gi
 
 ---
 
-<p align="center">
-
 ### 🚧 IRIS — Building Smarter Roads with AI
 
 **Artificial Intelligence • Computer Vision • Smart Infrastructure**
-
-</p>
